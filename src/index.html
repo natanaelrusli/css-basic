@@ -13,11 +13,15 @@
         }
 
         .bg-gray-900 {
-            background-color: #121826;
+            background-color: #f6f6f6;
         }
 
         .text-white {
             color: #fff;
+        }
+
+        .text-black {
+            color: #000;
         }
 
         .block {
@@ -35,19 +39,40 @@
         .hidden {
             display: none;
         }
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .header__logo-img {
+            width: 50px;
+        }
+
+        /* Vertically center */
+        .items-center {
+            align-items: center;
+        }
     </style>
 </head>
 <body>
-    <header class="bg-gray-900">
-        <div>
-            <img src="" alt="">
-            <a class="text-white" href="">Pricing</a>
-            <a class="text-white" href="">Course</a>
-            <a class="text-white" href="">Blog</a>
-            <a class="text-white" href="">Forum</a>
+    <header class="bg-gray-900 flex justify-between">
+        <div class="flex justify-center items-center">
+            <img class="header__logo-img" src="../assets/Sea_Group_logo.svg" alt="">
+            <a class="text-black" href="">Pricing</a>
+            <a class="text-black" href="">Course</a>
+            <a class="text-black" href="">Blog</a>
+            <a class="text-black" href="">Forum</a>
         </div>
-        <div>
-            <a class="text-white" href="">Login</a>
+        <div class="flex justify-center items-center">
+            <a class="text-black" href="">Login</a>
             <button>Sign Up</button>
         </div>
     </header>
