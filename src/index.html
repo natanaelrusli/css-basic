@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeaLabs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <style>
         body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             margin: 0;
             padding: 0;
+            font-family: 'Lato', sans-serif;
         }
 
+        /* Colors */
         .bg-gray-900 {
             background-color: #f6f6f6;
         }
@@ -24,6 +31,7 @@
             color: #000;
         }
 
+        /* Display block */
         .block {
             display: block;
         }
@@ -40,6 +48,7 @@
             display: none;
         }
 
+        /* Flexbox */
         .flex {
             display: flex;
         }
@@ -61,6 +70,7 @@
             align-items: center;
         }
 
+        /* Box Sizing */
         .m-8 {
             margin: 8px;
         }
@@ -69,8 +79,9 @@
             padding: 8px;
         }
 
-        .pt-18 {
-            padding: 18px;
+        .py-12 {
+            padding-top: 12px;
+            padding-bottom: 12px;
         }
 
         .py-18 {
@@ -81,6 +92,11 @@
         .px-12 {
             padding-right: 12px;
             padding-left: 12px;
+        }
+
+        .px-28 {
+            padding-right: 28px;
+            padding-left: 28px;
         }
 
         .mr-50 {
@@ -95,20 +111,58 @@
             padding-right: 16px;
             padding-left: 16px;
         }
+
+        /* Typography */
+        .font-sm {
+            font-size: 14px;
+        }
+
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .no-underline {
+            text-decoration: none;
+        }
+
+        .text-bold {
+            font-weight: bold;
+        }
+
+        .text-upper {
+            text-transform: uppercase;
+        }
+
+        .spacing-1 {
+            letter-spacing: 1px;
+        }
+
+        /* Buttons */
+        .bg-brand-teal {
+            background-color: #539D98;
+        }
+
+        .border-none {
+            border: none;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+        }
     </style>
 </head>
 <body>
     <header class="bg-gray-900 flex justify-between py-18 px-12">
         <div class="flex justify-center items-center">
             <img class="header__logo-img mr-50" src="../assets/Sea_Group_logo.svg" alt="">
-            <a class="text-black px-16" href="">Pricing</a>
-            <a class="text-black px-16" href="">Course</a>
-            <a class="text-black px-16" href="">Blog</a>
-            <a class="text-black px-16" href="">Forum</a>
+            <a class="text-black px-16 no-underline" href="">Pricing</a>
+            <a class="text-black px-16 no-underline" href="">Course</a>
+            <a class="text-black px-16 no-underline" href="">Blog</a>
+            <a class="text-black px-16 no-underline" href="">Forum</a>
         </div>
         <div class="flex justify-center items-center">
-            <a class="text-black px-16 mr-20" href="">Login</a>
-            <button>Sign Up</button>
+            <a class="text-black px-16 mr-20 no-underline" href="">Login</a>
+            <button class="bg-brand-teal font-sm text-white text-bold text-upper border-none rounded-full py-12 px-28 spacing-1">Sign Up</button>
         </div>
     </header>
 </body>
