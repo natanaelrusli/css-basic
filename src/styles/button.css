@@ -1,0 +1,12 @@
+/* Button */
+.bg-brand-teal {
+    background-color: var(--teal);
+}
+
+.border-none {
+    border: none;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}

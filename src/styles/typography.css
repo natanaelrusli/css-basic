@@ -1,0 +1,39 @@
+@import url(./variables.css);
+
+/* Typography */
+.font-sm {
+    font-size: var(--sm);
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.spacing-1 {
+    letter-spacing: 1px;
+}
+
+/* Colors */
+.bg-gray-900 {
+    background-color: var(--gray);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-black {
+    color: var(--black);
+}
