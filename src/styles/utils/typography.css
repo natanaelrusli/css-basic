@@ -27,7 +27,7 @@
 
 /* Colors */
 .bg-gray-900 {
-    background-color: var(--gray);
+    background-color: var(--light-gray);
 }
 
 .text-white {

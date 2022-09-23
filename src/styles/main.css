@@ -1,9 +1,14 @@
 @import url(variables.css);
-@import url(displayblock.css);
-@import url(typography.css);
-@import url(flexbox.css);
-@import url(boxsizing.css);
-@import url(button.css);
+
+@import url(./utils/displayblock.css);
+@import url(./utils/typography.css);
+@import url(./utils/flexbox.css);
+@import url(./utils/boxsizing.css);
+@import url(./utils/button.css);
+@import url(./utils/position.css);
+@import url(./utils/border.css);
+
+@import url(stats-section.css);
 
 body {
     -webkit-font-smoothing: antialiased;

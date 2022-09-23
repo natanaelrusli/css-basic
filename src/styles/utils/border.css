@@ -1,0 +1,7 @@
+.bor-left {
+    border-left: 3px solid var(--light-gray);
+}
+
+.bor-right {
+    border-right: 3px solid var(--light-gray);
+}
