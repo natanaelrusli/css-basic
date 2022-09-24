@@ -4,44 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeaLabs</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Flexbox Project</title>
 </head>
 <body>
-    <header class="bg-gray-900 flex justify-between py-18 px-12 relative">
-        <div class="flex justify-center items-center">
-            <img class="header__logo-img mr-50" src="../assets/img/Sea_Group_logo.svg" alt="">
-            <a class="text-black px-16 no-underline" href="">Pricing</a>
-            <a class="text-black px-16 no-underline" href="">Course</a>
-            <a class="text-black px-16 no-underline" href="">Blog</a>
-            <a class="text-black px-16 no-underline" href="">Forum</a>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Flexbox</div>
+            <ul class="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
         </div>
-        <div class="flex justify-center items-center">
-            <a class="text-black px-16 mr-20 no-underline" href="">Login</a>
-            <button class="bg-brand-teal font-sm text-white text-bold text-upper border-none rounded-full py-12 px-28 spacing-1">Sign Up</button>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <div>
+                <h1>Flexbox Project</h1>
+                <p>Here is the project where you learn how to use flexbox in CSS. It is a really important aspect when you want to build a mobile responesive website</p>
+            </div>
+            <img src="../assets/img/grid.svg" alt="Header Image">
         </div>
     </header>
 
-    <section class="hero-section">
-        <img class="w-full relative" src="../assets/img/sealabs_header.jpg" alt="Sea Labs Header">
-    </section>
-
-    <section class="stats-section">
-        <div class="stats-section__box">
-            <div class="stats-section__content bor-right">
-                <h2 class="text-bold">Target</h2>
-                <h3>1000 Digital Talents by 2023</h3>
+    <section class="boxes">
+        <div class="container">
+            <div class="box">
+                <h2>Alignment and Space</h2>
+                <p>
+                    A way to distribute space among all of the items in a container or a div
+                </p>
             </div>
-            <div class="stats-section__content">
-                <h2 class="text-bold">Trainees per Batch</h2>
-                <h3>30 Digital Talents</h3>
+            <div class="box">
+                <h2>Alignment and Space</h2>
+                <p>
+                    A way to distribute space among all of the items in a container or a div
+                </p>
             </div>
-            <div class="stats-section__content bor-left">
-                <h2 class="text-bold">Students Target</h2>
-                <h3>1000 Digital Talents by 2023</h3>
+            <div class="box">
+                <h2>Alignment and Space</h2>
+                <p>
+                    A way to distribute space among all of the items in a container or a div
+                </p>
             </div>
         </div>
     </section>
