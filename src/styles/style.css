@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+:root {
+    --bg-gray: #f5f5f5;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,110 +15,25 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background: #4187ff;
-}
-
-img {
-    max-width: 100%;
-}
-
-h1, h2 {
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style: none;
+    background: var(--bg-gray);
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 25px;
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    gap: 10px;
 }
 
-.navbar {
-    background: #3474f6;
+.item {
+    background: steelblue;
     color: #fff;
-    height: 70px;
-}
-
-.navbar .logo {
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.navbar a:hover {
-    color: #04ffff;
-}
-
-.navbar .container {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar ul {
-    display: flex;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-}
-
-.header {
-    background-color: #0151cd;
-    color: #fff;
-    min-height: 450px;
-}
-
-.header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.header img {
-    max-width: 400px;
-}
-
-.header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.boxes .container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.box {
-    flex: 1;
-    background: #0a51cc;
-    color: #fff;
-    border-radius: 10px;
-    margin: 20px 10px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
-    padding: 15px 20px;
-}
-
-@media(max-width: 768px) {
-    .header .container {
-        flex-direction: column;
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .boxes .container {
-        display: block;
-        text-align: center;
-    }
+    font-size: 20px;
+    padding: 20px;
+    border: skyblue 1px solid;
 }
